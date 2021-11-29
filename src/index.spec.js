@@ -11,9 +11,8 @@ describe('Site 요구사항 테스트', () => {
     test('Site에는 Board를 추가하고 추가된 Board를 조회할 수 있다.', () => {
         const mySite = new Site();
         const noticeBoard = new Board('공지사항');
-
+        
         mySite.addBoard(noticeBoard);
-
         expect(mySite.findBoardByName('공지사항')).toEqual(noticeBoard);
     });
 
